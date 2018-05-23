@@ -16,7 +16,13 @@ lastupdated: "2018-01-16"
 
 # IBM Cloud IP Ranges
 
-A frequently asked question is **What IP ranges do I allow through the firewall?**. The following list contains the full range of IPs to use with a Hardware Firewall (Dedicated).
+A frequently asked question is **What IP ranges or policies should I enable on my firewall to allow IBM Cloud management traffic to reach my devices ?**. 
+
+IBM Cloud has assigned ranges of IP addresses on both the public and private network to deploy management tools that perform a wide variey of functions, like monitoring, automated provisioning, and vulnerability scanning. These functions require policies to be injected in the customer-managed devices to enable traffic flow from these privileged devices to your devices on the IBM Cloud.  
+
+The following list contains the full range of IPs to use with hardware firewalls and virtual router appliances to enable these flows. 
+
+Note that the ranges are assigned exclusively to IBM Cloud Infrastructure components and are not allocated to other cloud tenants. Failure to enable these flows can lead to errors during provisioning, or induce false reporting of monitored devices being down due to lack of proper connectivity. 
 
 ## Frontend (public) network
 
